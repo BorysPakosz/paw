@@ -6,11 +6,12 @@
     <meta name="description" content="Strona poświęcona filmom oskarowym">
     <title>Filmy Oskarowe</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="timer.js"></script>
 </head>
 <body>
     <header>
         <h1>Filmy Oskarowe</h1>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Strona Główna</a></li>
                 <li><a href="filmy.html">Najlepsze Filmy</a></li>
@@ -25,16 +26,21 @@
         <h2>Witamy na stronie poświęconej najlepszym filmom oskarowym!</h2>
         <p>Na tej stronie znajdziesz informacje o filmach, które zdobyły najbardziej prestiżową nagrodę w świecie kina.</p>
         <img src="images/oscar.png" alt="Oscar" class="image-left">
-        <p><b>Oskary</b> to nagrody filmowe, które co roku przyznaje Amerykańska Akademia Sztuki i Wiedzy Filmowej. Oto lista kilku kultowych filmów, które zdobyły Oscara:</p>
-        <ul>
-            <li><i>Skazani na Shawshank</i> (1994)</li>
-            <li><i>Forrest Gump</i> (1994)</li>
-            <li><i>Gladiator</i> (2000)</li>
-            <li><i>Parasite</i> (2019)</li>
-        </ul>
+        <img src="images/oscar2.png" alt="Oscar" class="image-right">
+        <p>
+            <strong>Oscary</strong> (Academy Awards) to prestiżowe nagrody filmowe przyznawane corocznie przez 
+            <strong>Amerykańską Akademię Sztuki i Wiedzy Filmowej</strong>. Statuetki honorują 
+            <strong>wybitne osiągnięcia</strong> w przemyśle filmowym w różnych kategoriach, takich jak 
+            <strong>najlepszy film</strong>, <strong>reżyser</strong>, <strong>aktor</strong> czy 
+            <strong>scenariusz</strong>. Aby zdobyć Oscara, film musi spełniać kryteria Akademii, a jego 
+            twórcy przechodzą przez proces nominacji. Głosowanie odbywa się wśród 
+            <strong>członków Akademii</strong>, którzy są profesjonalistami z branży filmowej. 
+            Laureaci otrzymują złotą statuetkę, symbol prestiżu w światowym kinie.
+        </p>
     </div>
 
     <footer>
+        <p>Czas spędzony na stronie: <span id="time-spent">0</span> sekund</p>
         <p>169347 Borys Pakosz</p>
     </footer>
 </body>
