@@ -13,39 +13,39 @@ header {
 }
 
 .navbar {
-    background-color: #333; /* Tło paska nawigacyjnego */
-    padding: 15px 20px; /* Padding dookoła */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Cień pod paskiem nawigacyjnym */
+    background-color: #333;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Usunięcie domyślnego marginesu */
-    display: flex; /* Ustawienie elementów w linii */
-    justify-content: center; /* Wyśrodkowanie elementów */
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
 }
 
 nav ul li {
-    margin-right: 30px; /* Przerwa między elementami */
+    margin-right: 30px;
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Usunięcie marginesu z ostatniego elementu */
+    margin-right: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white; /* Kolor tekstu */
+    color: white; 
     font-weight: bold;
-    padding: 10px 15px; /* Padding dookoła linku */
-    border-radius: 5px; /* Zaokrąglone rogi */
-    transition: background-color 0.3s, color 0.3s; /* Animacja przy zmianie koloru */
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 nav ul li a:hover {
-    background-color: #ffeb3b; /* Tło przy najechaniu */
-    color: #333; /* Zmiana koloru tekstu przy najechaniu */
+    background-color: #ffeb3b;
+    color: #333; 
 }
 
 .content {
@@ -77,47 +77,41 @@ footer {
 
 table {
     width: 100%;
-    border-collapse: collapse; /* Połączenie granic komórek */
-    margin-bottom: 20px; /* Odstęp od dolnej części */
-    background-color: #1c1c1c; /* Kolor tła tabeli */
-    color: white; /* Kolor tekstu */
-    border-radius: 8px; /* Zaokrąglenie rogów tabeli */
-    overflow: hidden; /* Ukrycie krawędzi */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Cień dla tabeli */
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+    background-color: #1c1c1c; 
+    color: white; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
 }
 
 td {
-    padding: 15px; /* Zwiększony padding dla komórek */
-    text-align: left; /* Wyjustowanie tekstu do lewej */
-    border-bottom: 1px solid #444; /* Cień dolnej granicy */
-    transition: background-color 0.3s; /* Animacja przy zmianie koloru */
+    padding: 15px; 
+    text-align: left; 
+    border-bottom: 1px solid #444; 
+    transition: background-color 0.3s; 
 }
 
 td img {
-    width: 100px; /* Ustawienie stałej szerokości dla obrazków */
-    height: auto; /* Automatyczna wysokość */
-    border-radius: 5px; /* Zaokrąglenie rogów obrazków */
+    width: 100px; 
+    height: auto; 
+    border-radius: 5px; 
 }
 
 td:hover {
-    background-color: rgba(255, 235, 59, 0.1); /* Tło na hover */
+    background-color: rgba(255, 235, 59, 0.1); 
 }
 
 table tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.1); /* Co drugi wiersz z innym tłem */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 table tr:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Zmiana tła wiersza na hover */
+    background-color: rgba(255, 255, 255, 0.2); 
 }
 
-b {
-    color: #ffeb3b; /* Kolor dla pogrubionych tytułów filmów */
-}
 
-i {
-    color: #ffeb3b; /* Kolor dla kursywy */
-}
 
 form {
     max-width: 400px;
@@ -127,3 +121,82 @@ form {
 label {
     font-weight: bold;
 }
+    /*jasny tryb strony*/
+    body.light-mode h1{
+        color: #000000;
+    }
+    body.light-mode {
+        background-color: white;
+        color: black;
+    }
+
+    body.light-mode header {
+        background-color: #f0f0f0;
+        color: black;
+    }
+
+    body.light-mode .navbar {
+        background-color: #ddd;
+    }
+
+    body.light-mode nav ul li a {
+        color: black;
+    }
+
+    body.light-mode nav ul li a:hover {
+        background-color: #333;
+        color: white;
+    }
+
+    body.light-mode table {
+        background-color: #f9f9f9; 
+        color: black; 
+    }
+
+    body.light-mode td:hover {
+        background-color: rgba(0, 0, 0, 0.1); 
+    }
+
+    body.light-mode table tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.05); 
+    }
+
+    body.light-mode table tr:hover {
+        background-color: rgba(0, 0, 0, 0.15); 
+    }
+
+    body.light-mode footer {
+        background-color: #f0f0f0;
+        color: black;
+    }
+/* Styl przycisku dla trybu ciemnego */
+button.theme-toggle {
+    background-color: #333; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efekt hover dla trybu ciemnego */
+button.theme-toggle:hover {
+    background-color: #ffeb3b;
+    color: #333;
+}
+
+/* Styl przycisku dla trybu jasnego */
+body.light-mode button.theme-toggle {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Efekt hover dla trybu jasnego */
+body.light-mode button.theme-toggle:hover {
+    background-color: #333;
+    color: white;
+}
+
