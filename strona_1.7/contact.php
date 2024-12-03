@@ -28,14 +28,14 @@ class Contact {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com'; // Serwer SMTP Gmaila
             $mail->SMTPAuth = true;
-            $mail->Username = 'skilerekpl@gmail.com'; // Twój email Gmail
-            $mail->Password = 'zhusaaqrnvluoior'; // Hasło aplikacji Gmail
+            $mail->Username = 'pakoszborys9@gmail.com'; // Twój email Gmail
+            $mail->Password = 'cwyciwpftztenlzh'; // Hasło aplikacji Gmail
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
             // Ustawienia nadawcy i odbiorcy
             $mail->setFrom($email, 'Formularz Kontaktowy');
-            $mail->addAddress('skilerekpl@gmail.com'); // Podmień na właściwy adres odbiorcy
+            $mail->addAddress('pakoszborys9@gmail.com'); // Podmień na właściwy adres odbiorcy
 
             // Treść wiadomości
             $mail->isHTML(true);
@@ -57,13 +57,13 @@ class Contact {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'skilerekpl@gmail.com';
-            $mail->Password = 'zhusaaqrnvluoior';
+            $mail->Username = 'pakoszborys9@gmail.com';
+            $mail->Password = 'wyciwpftztenlzh';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
             // Ustawienia nadawcy i odbiorcy
-            $mail->setFrom('skilerekpl@gmail.com', 'Przypomnienie Hasła');
+            $mail->setFrom('pakoszborys9@gmail.com', 'Przypomnienie Hasła');
             $mail->addAddress($email);
 
             // Treść wiadomości
